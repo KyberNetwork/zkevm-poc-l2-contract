@@ -10,6 +10,6 @@ npx hardhat test
 REPORT_GAS=true npx hardhat test
 npx hardhat node
 npx hardhat run scripts/deploy.ts
-# We should Flattens and prints contracts and their dependencies (Resolves licenses).
+# We should flatten contract (Resolves licenses), if not, the hardhat might throw error while compiling.
 npx hardhat flat build/PrivateTx.sol > build/PrivateTx_flat.sol 
 ```
